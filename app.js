@@ -22,7 +22,7 @@ const app = express();
 //Enable incoming JSON DATA
 app.use(express.json());
 
-// ADD SECURITY HELMET
+// ADD SECURITY HELMET/
 app.use(helmet());
 //Compress responses
 app.use(compression());
