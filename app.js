@@ -51,7 +51,7 @@ db.sync()
   .catch((err) => console.log(err));
 
 //Up server
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Express app sunning on port: ${PORT}`);
 });
